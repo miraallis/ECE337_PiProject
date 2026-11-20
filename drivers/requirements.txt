@@ -1,0 +1,15 @@
+# Install on the Raspberry Pi (Pi OS, 64-bit):
+#   pip3 install -r requirements.txt
+#
+# System packages needed too (not pip):
+#   sudo raspi-config                      # enable SPI and I2C
+#   sudo apt install pigpio python3-pigpio # for sub-GHz timing
+#   sudo systemctl enable --now pigpiod    # start the pigpio daemon
+
+# PN532 NFC (I2C)
+adafruit-circuitpython-pn532
+adafruit-blinka
+
+# CC1101 sub-GHz (SPI) + timing
+spidev
+pigpio
